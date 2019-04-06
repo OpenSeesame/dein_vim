@@ -5,7 +5,6 @@ set mouse=a
 set autoindent
 set tabstop=4
 set shiftwidth=2
-colorscheme apprentice
 
 
 "python
@@ -62,3 +61,4 @@ if has('vim_starting') && dein#check_install()
 endif
 " }}}
 
+colorscheme apprentice

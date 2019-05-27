@@ -6,7 +6,6 @@ set autoindent
 set tabstop=4
 set shiftwidth=2
 
-
 "python
 autocmd BufNewFile,BufRead *.py nnoremap <F5> :!python %
 
@@ -15,6 +14,10 @@ autocmd BufNewFile,BufRead *.cpp nnoremap <F5> :!g++ %
 
 "md
 autocmd BufNewFile,BufRead *.md nnoremap <F5> :!markdown % >
+
+""tex
+autocmd BufNewFile,BufRead *.tex nnoremap <F5> :!platex %
+autocmd BufNewFile,BufRead *.tex nnoremap <F6> :!dvipdfmx
 
 " dein.vim {{{
 let g:config_home = empty($XDG_CONFIG_HOME) ? expand('~/.config') : $XDG_CONFIG_HOME

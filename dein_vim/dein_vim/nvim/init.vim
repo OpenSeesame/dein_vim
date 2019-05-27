@@ -10,6 +10,12 @@ set shiftwidth=2
 "python
 autocmd BufNewFile,BufRead *.py nnoremap <F5> :!python %
 
+"cpp
+autocmd BufNewFile,BufRead *.cpp nnoremap <F5> :!g++ %
+
+"md
+autocmd BufNewFile,BufRead *.md nnoremap <F5> :!markdown % >
+
 " dein.vim {{{
 let g:config_home = empty($XDG_CONFIG_HOME) ? expand('~/.config') : $XDG_CONFIG_HOME
 let g:cache_home = empty($XDG_CACHE_HOME) ? expand('$HOME/.cache') : $XDG_CACHE_HOME

@@ -10,7 +10,7 @@ set shiftwidth=2
 autocmd BufNewFile,BufRead *.py nnoremap <F5> :!python %
 
 "cpp
-autocmd BufNewFile,BufRead *.cpp nnoremap <F5> :!g++ %
+autocmd BufNewFile,BufRead *.cpp nnoremap <F5> :!g++ --std=c++11 %
 
 "md
 autocmd BufNewFile,BufRead *.md nnoremap <F5> :!markdown % >
